@@ -37,4 +37,34 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
         return 1 + Math.max(leftHeight, rightHeight);
     }
+
+    public void inOrderTraversal() {
+        recInOrder(root);
+        System.out.println();
+    }
+
+    private void recInOrder(BSTNode<T> node) {
+        if (node == null) {
+            return;
+        }
+
+        recInOrder(node.getLeft());
+        System.out.print(node.getInfo() + " ");
+        recInOrder(node.getRight());
+    }
+
+    public void preOrderTraversal() {
+        recPreOrder(root);
+        System.out.println();
+    }
+
+    private void recPreOrder(BSTNode<T> node) {
+        if (node == null) {
+            return;
+        }
+
+        System.out.print(node.getInfo() + " ");
+        recPreOrder(node.getLeft());
+        recPreOrder(node.getRight());
+    }
 }
