@@ -9,3 +9,7 @@ I added a height method that uses recursion to find the deepest branch of the tr
 # Phase 3
 
 I added inorder and preorder traversal methods using recursion. Inorder visits the left subtree, the current node, and then the right subtree, which prints the IDs in sorted order. Preorder visits the current node first, followed by the left and right subtrees. I tested both methods and confirmed that they produced the expected output.
+
+# Phase 4
+
+I tested empty, single-node, and skewed trees. The empty tree returned a height of -1 without crashing, and the single-node tree returned 0. Inserting sorted values created a right-skewed tree with height 3. The sample tree had height 2, showing that insertion order affects the tree's structure and efficiency.
