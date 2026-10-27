@@ -9,5 +9,6 @@ public class Main {
         }
 
         System.out.println("Archive initialized with sample IDs.");
+        System.out.println("Archive height: " + archive.height());
     }
 }
